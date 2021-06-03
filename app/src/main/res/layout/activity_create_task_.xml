@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTask_Activity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="36dp"
+        android:text="Create a new task"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnsettings2"
+        android:layout_width="268dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:onClick="Seetasks"
+        android:text="confirm new task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETdeadlinetime" />
+
+    <Button
+        android:id="@+id/btnseetasks"
+        android:layout_width="268dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:onClick="YOURTASKS"
+        android:text="Click here to see your  tasks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsettings2" />
+
+    <EditText
+        android:id="@+id/ETdescription"
+        android:layout_width="332dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="enter description for your task:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/ETdeadlinedate"
+        android:layout_width="262dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="deadline date"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETdescription" />
+
+    <EditText
+        android:id="@+id/ETdeadlinetime"
+        android:layout_width="258dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="deadline time"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETdeadlinedate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
